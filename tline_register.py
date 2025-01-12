@@ -94,6 +94,9 @@ class TlineRegister:
             co.set_argument("--disable-extensions")
             co.set_argument("--no-sandbox")
             co.set_argument("--disable-gpu")
+            # 无痕模式
+            co.set_argument("--incognito")
+            # co.headless(True)
 
             # 创建页面实例
             self.page = ChromiumPage(addr_or_opts=co)
